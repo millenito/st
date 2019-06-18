@@ -1,19 +1,21 @@
+# My personal fork of [Luke's build of st](https://github.com/LukeSmithxyz/st) with changed bindings
+
 # Luke's build of st - the simple (suckless) terminal
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
 
-## Unique features (using dmenu)
+## Unique features (using ~~dmenu~~ now changed to rofi)
 
-+ **follow urls** by pressing `alt-l`
-+ **copy urls** in the same way with `alt-y`
-+ **copy the output of commands** with `alt-o`
++ **follow urls** by pressing ~~`alt-l`~~ `Ctrl-Shift-I`
++ **copy urls** in the same way with ~~`alt-y`~~ `Ctrl-Shift-Y`
++ **copy the output of commands** with ~~`alt-o`~~ `Ctrl-Shift-O`
 
 ## Bindings for
 
 + **scrollback** with `alt-↑/↓` or `alt-pageup/down` or `shift` while scrolling the mouse
-+ OR **vim-bindings**: scroll up/down in history with `alt-k` and `alt-j`. Faster with `alt-u`/`alt-d`.
++ OR **vim-bindings**: scroll up/down in history with ~~`alt-k` and `alt-j`~~ `Ctrl-Shift-K` and `Ctrl-Shift-J`. Faster with ~~`alt-u`/`alt-d`~~ `Ctrl-Shift-U` and `Ctrl-Shift-D`.
 + **zoom/change font size**: same bindings as above, but holding down shift as well. `alt-home` returns to default
-+ **copy text** with `alt-c`, **paste** is `alt-v` or `shift-insert`
++ **copy text** with ~~`alt-c`~~ `Ctrl-Shift-C`, **paste** is ~~`alt-v`~~ `Ctrl-Shift-V` or `shift-insert`
 
 ## Pretty stuff
 
@@ -31,7 +33,15 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 
 ## Installation for newbs
 
+installation for this fork:
+
+``` bash
+git clone https://github.com/millenito/st
+cd st
+sudo make install
 ```
+installation for luke's original build:
+``` bash
 git clone https://github.com/LukeSmithxyz/st
 cd st
 sudo make install
